@@ -10,7 +10,6 @@ body {
     margin-top: 2vw;
     width: 90vw;
     height: 45vw;
-    border: black;
     border-radius: 80px;
-    border-style: ridge;
+    box-shadow: -5px -5px 14px 2px rgb(255, 255, 255), 4px 4px 10px 2px rgb(196, 196, 196, 196);
 }
