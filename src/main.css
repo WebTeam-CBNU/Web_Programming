@@ -1,4 +1,14 @@
 body {
-    background-color: aliceblue;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    background-color: #E4EBF5;
+}
+
+#box {
+    background-color: #020715;
+    margin-top: 2vw;
+    width: 90vw;
+    height: 45vw;
+    color: aliceblue;
 }
