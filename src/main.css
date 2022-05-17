@@ -6,9 +6,11 @@ body {
 }
 
 #box {
-    background-color: #020715;
+    background-color: #E4EBF5;
     margin-top: 2vw;
     width: 90vw;
     height: 45vw;
-    color: aliceblue;
+    border: black;
+    border-radius: 80px;
+    border-style: ridge;
 }
