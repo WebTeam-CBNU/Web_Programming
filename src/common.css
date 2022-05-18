@@ -49,3 +49,31 @@ body {
     border-radius: 30px;
     box-shadow: -5px -5px 14px 2px rgb(255, 255, 255), 4px 4px 10px 2px rgb(196, 196, 196, 196);
 }
+
+input{display:none;}
+label{
+    display:inline-block;
+    width:100px;
+    height:34px;
+    cursor:pointer;
+    position:relative;
+    background-color:#ccc;
+}
+
+label::before{
+    content: '';
+    display:block;
+    width:26px;
+    height: 26px;
+    left:4px;
+    bottom:4px;
+    position:absolute;
+    background-color:#fff;
+    transition:all .4s ease;
+}
+
+input:checked + label {background-color:#2196F3;}
+input:checked + label::before{transform:translateX(65px);}
+
+label.round{border-radius : 34px}
+label.round::before{border-radius:50%}
