@@ -15,9 +15,6 @@ body {
     height: 90vh; 
     border-radius: 80px;
     box-shadow: -5px -5px 14px 2px rgb(255, 255, 255), 4px 4px 10px 2px rgb(196, 196, 196, 196);
-<<<<<<< HEAD
-}
-=======
 }   
 
 .innerbox{
@@ -80,4 +77,3 @@ input:checked + label::before{transform:translateX(65px);}
 
 label.round{border-radius : 34px}
 label.round::before{border-radius:50%}
->>>>>>> bd8ad4b0c8bd6775d38dd855237c4aadc85f994b
