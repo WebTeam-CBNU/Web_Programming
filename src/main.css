@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     display: flex;
     text-align: center;
@@ -17,6 +18,8 @@ body {
     box-shadow: -5px -5px 14px 2px rgb(255, 255, 255), 4px 4px 10px 2px rgb(196, 196, 196, 196);
 }   
 
+=======
+>>>>>>> 5f744ec052308cc345160dd0096013c5c7bfe172
 .innerbox{
     display: flex;
     text-align: center;
@@ -25,16 +28,38 @@ body {
 
 }
 
-.button1{
+.button_default{
     margin-left: 10%;
     margin-right:10%;
     margin-top:5%;
     margin-bottom: 5%;
+    padding:5%;
+    font-size:30px;
+    border-radius: 30px;
+    box-shadow: -5px -5px 14px 2px rgb(255, 255, 255), 4px 4px 10px 2px rgb(196, 196, 196, 196);
+}
+
+.button_clicked{
+    margin-left: 10%;
+    margin-right:10%;
+    margin-top:5%;
+    margin-bottom: 5%;
+    padding:5%;
+    font-size:30px;
+    border-radius: 30px;
+    box-shadow: -5px -5px 14px 2px rgb(255, 255, 255) inset, 4px 4px 10px 2px rgb(196, 196, 196, 196) inset;
 }
 
 .clock{
     margin-left: 30%;
     margin-right:30%;
+    margin-top:5%;
+    margin-bottom: 5%;
+}
+
+.calendar{
+    margin-left: 10%;
+    margin-right:10%;
     margin-top:5%;
     margin-bottom: 5%;
 }
@@ -76,4 +101,8 @@ input:checked + label {background-color:#2196F3;}
 input:checked + label::before{transform:translateX(65px);}
 
 label.round{border-radius : 34px}
+<<<<<<< HEAD
 label.round::before{border-radius:50%}
+=======
+label.round::before{border-radius:50%}
+>>>>>>> 5f744ec052308cc345160dd0096013c5c7bfe172
