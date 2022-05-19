@@ -6,10 +6,78 @@ body {
 }
 
 #box {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
     background-color: #E4EBF5;
     margin-top: 2vw;
     width: 90vw;
-    height: 45vw;
+    height: 90vh; 
     border-radius: 80px;
     box-shadow: -5px -5px 14px 2px rgb(255, 255, 255), 4px 4px 10px 2px rgb(196, 196, 196, 196);
+<<<<<<< HEAD
 }
+=======
+}   
+
+.innerbox{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.button1{
+    margin-left: 10%;
+    margin-right:10%;
+    margin-top:5%;
+    margin-bottom: 5%;
+}
+
+.clock{
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top:5%;
+    margin-bottom: 5%;
+}
+
+#alert_box {
+    background-color: #E4EBF5;
+    margin-right:10%;
+    padding-top:5%;
+    padding-bottom: 5%;
+    margin-top:5%;
+    margin-bottom: 5%;
+    border-radius: 30px;
+    box-shadow: -5px -5px 14px 2px rgb(255, 255, 255), 4px 4px 10px 2px rgb(196, 196, 196, 196);
+}
+
+input{display:none;}
+label{
+    display:inline-block;
+    width:100px;
+    height:34px;
+    cursor:pointer;
+    position:relative;
+    background-color:#ccc;
+}
+
+label::before{
+    content: '';
+    display:block;
+    width:26px;
+    height: 26px;
+    left:4px;
+    bottom:4px;
+    position:absolute;
+    background-color:#fff;
+    transition:all .4s ease;
+}
+
+input:checked + label {background-color:#2196F3;}
+input:checked + label::before{transform:translateX(65px);}
+
+label.round{border-radius : 34px}
+label.round::before{border-radius:50%}
+>>>>>>> bd8ad4b0c8bd6775d38dd855237c4aadc85f994b
