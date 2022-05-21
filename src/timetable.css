@@ -1,7 +1,6 @@
 body div {
   display : flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 H1 {
@@ -10,6 +9,10 @@ H1 {
   font-size: 30px
 }
 
+caption {
+  font-size: 50px;
+  margin-bottom: 90px;
+}
 
 /* .myTimetable {
   width:100%;
