@@ -6,126 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="timetable.css">
     <script src="./main.js"></script>
-    <title>잼민이가 만드는 시간표 페이지</title>
+    <title>재민이가 만드는 일정 페이지입니다</title>
 </head>
-<!DOCTYPE html>
-<html>
- 
-<body>
-    <h1>TIME TABLE</h1>
-    <table border="5" cellspacing="0" align="center">
-        <!--<caption>Timetable</caption>-->
-        <tr>
-            <td align="center" height="50"
-                width="100"><br>
-                <b>Day/Period</b></br>
-            </td>
-            <td align="center" height="50"
-                width="100">
-                <b>MON</b>
-            </td>
-            <td align="center" height="50"
-                width="100">
-                <b>TUE</b>
-            </td>
-            <td align="center" height="50"
-                width="100">
-                <b>WES</b>
-            </td>
-            <td align="center" height="50"
-                width="100">
-                <b>THUR</b>
-            </td>
-            <td align="center" height="50"
-                width="100">
-                <b>FRI</b>
-            </td>
-            <td align="center" height="50"
-                width="100">
-                <b>SAT</b>
-            </td>
-            <td align="center" height="50"
-                width="100">
-                <b>SNU</b>
-            </td>
-        </tr>
-        <tr>
-            <td align="center" height="50">
-                <b>09:00-10:00</b></td>
-            <td align="center" height="50">Eng</td>
-            <td align="center" height="50">Mat</td>
-            <td align="center" height="50">Che</td>
-            <td rowspan="6" align="center" height="50">
-                <h2>L<br>U<br>N<br>C<br>H</h2>
-            </td>
-            <td colspan="3" align="center"
-                height="50">LAB</td>
-            <td align="center" height="50">Phy</td>
-        </tr>
-        <tr>
-            <td align="center" height="50">
-                <b>Tuesday</b>
-            </td>
-            <td colspan="3" align="center"
-                height="50">LAB
-            </td>
-            <td align="center" height="50">Eng</td>
-            <td align="center" height="50">Che</td>
-            <td align="center" height="50">Mat</td>
-            <td align="center" height="50">SPORTS</td>
-        </tr>
-        <tr>
-            <td align="center" height="50">
-                <b>Wednesday</b>
-            </td>
-            <td align="center" height="50">Mat</td>
-            <td align="center" height="50">phy</td>
-            <td align="center" height="50">Eng</td>
-            <td align="center" height="50">Che</td>
-            <td colspan="3" align="center"
-                height="50">LIBRARY
-            </td>
-        </tr>
-        <tr>
-            <td align="center" height="50">
-                <b>Thursday</b>
-            </td>
-            <td align="center" height="50">Phy</td>
-            <td align="center" height="50">Eng</td>
-            <td align="center" height="50">Che</td>
-            <td colspan="3" align="center"
-                height="50">LAB
-            </td>
-            <td align="center" height="50">Mat</td>
-        </tr>
-        <tr>
-            <td align="center" height="50">
-                <b>Friday</b>
-            </td>
-            <td colspan="3" align="center"
-                height="50">LAB
-            </td>
-            <td align="center" height="50">Mat</td>
-            <td align="center" height="50">Che</td>
-            <td align="center" height="50">Eng</td>
-            <td align="center" height="50">Phy</td>
-        </tr>
-        <tr>
-            <td align="center" height="50">
-                <b>Saturday</b>
-            </td>
-            <td align="center" height="50">Eng</td>
-            <td align="center" height="50">Che</td>
-            <td align="center" height="50">Mat</td>
-            <td colspan="3" align="center"
-                height="50">SEMINAR
-            </td>
-            <td align="center" height="50">SPORTS</td>
-        </tr>
-    </table>
-</body>
- 
-</html>
-</html>
-
+<H1>My Timetable</H1>
+<TABLE class="myTimetable"> 
+  <THEAD>
+    <TR>
+      <TH></TH>
+      <TH>Monday</TH>
+      <TH>Tuesday</TH>
+      <TH>Wednesday</TH>
+      <TH>Thursday</TH>
+      <TH>Friday</TH>     
+    </TR>
+  </THEAD>
+  <TBODY>
+    <TR>
+      <TD>P1</TD>
+      <TD>
+        <div class="subject">Maths</div>
+        <div class="room">A120</div>
+      </TD>
+      <TD>
+        <div class="subject">Art</div>
+        <div class="room">C1</div>
+      </TD>
+      <TD>        
+        <div class="subject">English</div>
+        <div class="room">B21</div>
+      </TD>
+      <TD>        
+        <div class="subject">Maths</div>
+        <div class="room">A120</div>
+      </TD>
+       <TD>        
+         <div class="subject">Geography</div>
+        <div class="room">B101</div>
+      </TD>     
+    </TR>
+    <TR>
+      <TD>P2</TD>
+      <TD>        
+        <div class="subject">Science</div>
+        <div class="room">Lab1</div>
+      </TD>
+      <TD>        
+        <div class="subject">History</div>
+        <div class="room">B104</div>
+      </TD>
+      <TD>        
+        <div class="subject">Spanish</div>
+        <div class="room">C17</div>
+      </TD>
+      <TD>        
+        <div class="subject">P.E.</div>
+        <div class="room">A Gym</div>
+      </TD>
+      <TD>        
+        <div class="subject">Maths</div>
+        <div class="room">A120</div>
+      </TD>
+    </TR>
+      <TR>
+      <TD colspan="6" class="break">Break</TD>
+      </TR>
+      <TR>
+      <TD>P3</TD>
+      <TD>        
+        <div class="subject">I.T.</div>
+        <div class="room">ICT 1</div>
+      </TD>
+      <TD>        
+        <div class="subject">English</div>
+        <div class="room">B21</div>
+      </TD>
+      <TD>        
+        <div class="subject">Musique</div>
+        <div class="room">C5</div>
+      </TD>
+      <TD>        
+        <div class="subject">English</div>
+        <div class="room">B21</div>
+      </TD>
+      <TD>        
+        <div class="subject">PSHE</div>
+        <div class="room">A24</div>
+      </TD>
+    </TR>
+      <TR>
+      <TD colspan="6" class="lunch">Lunch</TD>
+    </TR>
+      <TR>
+      <TD>P4</TD>
+      <TD>        
+        <div class="subject">History</div>
+        <div class="room">B104</div>
+      </TD>
+      <TD>        
+        <div class="subject">Drama</div>
+        <div class="room">C17</div>
+      </TD>
+      <TD>        
+        <div class="subject">Maths</div>
+        <div class="room">A120</div>
+      </TD>
+      <TD>        
+        <div class="subject">Geography</div>
+        <div class="room">B101</div>
+      </TD>
+      <TD>        
+        <div class="subject">P.E.</div>
+        <div class="room">A Gym</div>
+      </TD>
+    </TR>
+      <TR>
+      <TD>P5</TD>
+      <TD>        
+        <div class="subject">Spanish</div>
+        <div class="room">C17</div>
+      </TD>
+      <TD>        
+        <div class="subject">Science</div>
+        <div class="room">Lab1</div>
+      </TD>
+      <TD>        
+        <div class="subject">English</div>
+        <div class="room">B21</div>
+      </TD>
+      <TD>        
+        <div class="subject">Science</div>
+        <div class="room">Lab1</div>
+      </TD>
+      <TD>        
+        <div class="subject">R.E.</div>
+        <div class="room">B18</div>
+      </TD>
+    </TR>
+   </TBODY>
+  </TABLE>
