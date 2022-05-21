@@ -1,26 +1,22 @@
-BODY {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  background-color: green;
+body div {
+  display : flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 H1 {
-  display: inline;
   text-align: center;
-  color: #FFFFFF;
+  color: #000;
   font-size: 30px
-
 }
 
-.myTimetable {
+
+/* .myTimetable {
   width:100%;
   border-collapse: collapse;
   table-layout: auto;
   margin-top: 80px;
-  border-style: ridge;
-  box-shadow: -5px -5px 14px 2px rgb(255, 255, 255), 4px 4px 10px 2px rgb(196, 196, 196, 196);
-  
+  border-style: ridge;  
 }
 
 .myTimetable THEAD{
@@ -54,4 +50,4 @@ H1 {
 .room {
   font-size: 10pt;
   font-style: italic;
-}
+} */
