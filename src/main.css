@@ -78,8 +78,4 @@ input:checked + label {background-color:#2196F3;}
 input:checked + label::before{transform:translateX(65px);}
 
 label.round{border-radius : 34px}
-<<<<<<< HEAD
 label.round::before{border-radius:50%}
-=======
-label.round::before{border-radius:50%}
->>>>>>> 5f744ec052308cc345160dd0096013c5c7bfe172
