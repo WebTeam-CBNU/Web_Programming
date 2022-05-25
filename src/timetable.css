@@ -1,0 +1,58 @@
+body div {
+  display : flex;
+  flex-direction: column;
+}
+
+
+
+caption {
+  font-size: 60px;
+  margin-bottom: 90px;
+ 
+  color: blue;
+  text-shadow: -3px 0px yellow, 0px 3px yellow, 3px 0px yellow, 0px -3px yellow;
+}
+
+ .myTimetable {
+  width:100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  margin-top: 80px;
+  border-style: ridge;  
+}
+.myTimetable TD {
+  border: 1px solid black;
+  padding: 6px;
+  text-align: center;
+}
+.myTimetable THEAD{
+  color: #646EFF;
+  font-size: 30px;
+  margin-bottom:50000px;
+}
+
+/* 
+
+.myTimetable TBODY {
+  background-color: #AAAAFF;
+}
+
+.myTimetable TBODY TR TD:first-child {
+  background-color: #FF0066;
+  font-weight: bold;
+}
+
+.break, .lunch {
+  background-color: #FF0066 !important;
+  font-style: italic;
+}
+
+.subject {
+  font-size: 12pt;
+  margin-bottom:4px;
+}
+
+.room {
+  font-size: 10pt;
+  font-style: italic;
+} */ 

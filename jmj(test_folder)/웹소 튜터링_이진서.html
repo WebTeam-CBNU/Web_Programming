@@ -1,0 +1,167 @@
+<!-- 오픈소스웹소프트웨어 튜터링 튜터 이진서 
+11주차 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        nav {
+            background-color: rgb(139, 135, 144);
+        }
+
+        nav ul {
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        nav ul li {
+            display: inline-block;
+            color: white;
+            margin: auto;
+        }
+
+        #nav_title {
+            font-size: 50px;
+        }
+
+        .seats {
+            /* block 없애기 */
+            display: flex;
+            /*seats안의 div들을 균일하게 띄움*/
+            justify-content: space-evenly;
+            margin-top: 0rem;
+        }
+
+        table{
+            width: 90%;
+            /*가로크기*/
+          
+            /* 요소끼리 띄우기 */
+        }
+
+        .radios{
+            display: none;
+        }
+
+        .radios+label{
+            display: inline-block;
+            padding: 20px 40px;
+            border: 1px solid rgb(139, 135, 144);
+            line-height: 24px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 13px;
+            background-color: #fff;
+            color: rgb(139, 135, 144);
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 30px, rgba(0, 0, 0, 0.198) 0px 6px 6px;
+        }
+
+        .radios:hover+label{
+            background-color: rgba(139, 135, 144, 0.438);
+        }
+        .radios:checked+label{
+            background-color: rgb(139, 135, 144);
+            color: #fff;
+        }
+
+        #div_for_book{
+            display: flex;
+            justify-content: center;
+        }
+        #book{
+            margin: 0 auto;
+            zoom: 3.0;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            background-color: rgb(253, 253, 253);
+
+        }
+
+    </style>
+
+    <script>
+        function makeTable() {
+            var computer_id = 1;
+            td_html = "<input type='checkbox' name='radios[]'  class='radios' id='radio" + computer_id + "'>";
+
+            for (var i = 0; i < 3; i++) {
+                var table = document.createElement("table");
+                document.getElementsByClassName("seat-table")[i].appendChild(table);
+                for (var j = 0; j < 5; j++) {
+                    var tr = document.createElement("tr");
+                    table.appendChild(tr);
+
+                    var td1 = document.createElement("td");
+                    td1.innerHTML = "<input type='checkbox' name='radios[]' value='123' class='radios' id='radio" + computer_id + "'><label for='radio" + computer_id + "'> " + computer_id + "번 좌석</label>"; //td_html
+                    computer_id += 1;
+
+                    var td2 = document.createElement("td");
+                    td2.innerHTML = "<input type='checkbox' name='radios[]' value='123' class='radios' id='radio" + computer_id + "'><label for='radio" + computer_id + "'> " + computer_id + "번 좌석</label>"; //td_html
+                    computer_id += 1;
+
+                    tr.appendChild(td1);
+                    tr.appendChild(td2);
+                }
+            }
+
+            // 예약하기 버튼에 이벤트넣기
+            let book_btn = document.getElementById("book");
+            book_btn.addEventListener('click', function(){
+                let checked=[];
+                let checked_message="";
+                let radios=document.querySelectorAll(".radios");
+                for(let i=0; i<radios.length; i++){
+                    if(radios[i].checked){
+                        checked.push(radios[i]);
+                        checked_message += (i+1)+" ";
+                    }
+                }
+                //선택된 거 있나 없나 검사
+                if(checked.length!=0){  //뭐라도 선택했다
+                    alert(checked_message+"선택됨")
+                } else{
+                    alert("아무것도 없음");
+                }
+            })
+        }
+    </script>
+</head>
+
+<body onload="makeTable()">
+    <nav>
+        <ul>
+            <li><span id="nav_title">오픈소스웹소프트웨어 11주차</span></li>
+            <li><a href="">about us</a></li>
+            <li><a href="">login</a></li>
+        </ul>
+    </nav>
+    <script>
+        //addeventlistener
+        let t = document.getElementById("nav_title");
+        t.addEventListener('mouseenter', function (event) {
+            t.style.fontWeight = "bold";
+        });
+
+        t.addEventListener('mouseleave', function (event) {
+            t.style.fontWeight = "normal";
+        })
+    </script>    
+
+    <div class="seats">
+        <div class="seat-table"></div>
+        <div class="seat-table"></div>
+        <div class="seat-table"></div>
+    </div>
+
+    <div id="div_for_book">
+        <button id="book">예약하기</button>
+    </div>
+</body>
+
+</html>

@@ -3,7 +3,6 @@
     text-align: center;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .button_default{
@@ -14,7 +13,7 @@
     padding:6%;
     font-size:30px;
     border-radius: 30px;
-    box-shadow: -5px -5px 14px 2px rgb(255, 255, 255), 4px 4px 10px 2px rgb(196, 196, 196, 196);
+    box-shadow: -1px -1px 4px 1px rgb(255, 255, 255), 2px 2px 2px 1px rgb(196, 196, 196, 196);
 }
 
 .button_clicked{
@@ -79,4 +78,8 @@ input:checked + label {background-color:#2196F3;}
 input:checked + label::before{transform:translateX(65px);}
 
 label.round{border-radius : 34px}
+<<<<<<< HEAD
 label.round::before{border-radius:50%}
+=======
+label.round::before{border-radius:50%}
+>>>>>>> 5f744ec052308cc345160dd0096013c5c7bfe172
