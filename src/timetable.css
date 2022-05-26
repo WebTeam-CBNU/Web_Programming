@@ -7,7 +7,8 @@ body div {
 H1 {
   text-align: center;
   color: #000;
-  font-size: 30px
+  font-size: 30px;
+  border: 3px solid red;
 }
 
 
