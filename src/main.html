@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <script src="main.js"></script>
     <title>정현이가 만드는 메인페이지</title>
 </head>
 <body>
-    <div id="box">
+    <div id="box" class="box">
         <div class="innerbox" style="width : 26%;">
-            <div class="button_default">시간표</div>
-            <div class="button_clicked">과제 목록</div>
-            <div class="button_clicked">오늘 할 일</div>
-            <div class="button_default">친구 관리</div>
+            <div id="button1" class="button_default" onmousedown="mouseDown(this.id)" onmouseup="mouseUp(this.id)">시간표</div>
+            <div id="button2" class="button_default" onmousedown="mouseDown(this.id)" onmouseup="mouseUp(this.id)">과제 목록</div>
+            <div id="button3" class="button_default" onmousedown="mouseDown(this.id)" onmouseup="mouseUp(this.id)">오늘 할 일</div>
+            <div id="button4" class="button_default" onmousedown="mouseDown(this.id)" onmouseup="mouseUp(this.id)">친구 관리</div>
         </div>
         <div class="innerbox" style="width : 36%; flex-shrink: 0;">
             <img class="clock" src="clock.png">
             <img class="calendar" src="calendar.png">
         </div>
         <div class="innerbox" style="width : 26%;">
-            <div id="alert_box">
+            <div id="alert_box" class="alert_box">
                 <p>dd</p>
                 <p>dddd</p>
                 <p>dd</p>
@@ -36,10 +36,15 @@
                 <p>dddd</p>
                 <p>dd</p>
             </div>
-            <div id="alert_box">
+            <div id="alert_box" class="alert_box">
                 <span>다크모드  </span>
-                <input type="checkbox" id="switch3">
+                <input type="checkbox" id="switch3" onclick="darkMode()">
                 <label for="switch3" class="round"></label>
+            </div>
+            <div id="lb-audio">
+                <audio controls>
+                  <source src="//bit.ly/3euuS7B" type="audio/mpeg">  
+                </audio>
             </div>
         </div>
     </div>
