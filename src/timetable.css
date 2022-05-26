@@ -1,7 +1,6 @@
 body div {
   display : flex;
   flex-direction: column;
-<<<<<<< HEAD
   justify-content: flex-start;
 }
 
@@ -10,9 +9,7 @@ H1 {
   color: #000;
   font-size: 30px;
   border: 3px solid red;
-=======
->>>>>>> f24a153bfceae33ed8cb43dbac9272878e3e9e06
-}
+}/*123*/
 
 
 
