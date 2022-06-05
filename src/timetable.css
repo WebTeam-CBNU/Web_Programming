@@ -1,7 +1,15 @@
 body div {
   display : flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
+
+H1 {
+  text-align: center;
+  color: #000;
+  font-size: 30px;
+  border: 3px solid red;
+}/*123*/
 
 
 
