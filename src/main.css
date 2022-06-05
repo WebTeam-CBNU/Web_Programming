@@ -6,28 +6,54 @@
 }
 
 .button_default{
-    margin-left: 10%;
-    margin-right:10%;
+    margin-left: 20%;
+    margin-right: 0%;
     margin-top:5%;
     margin-bottom: 5%;
-    padding:5%;
+    padding:6%;
     font-size:30px;
     border-radius: 30px;
-    box-shadow: -1px -1px 4px 1px rgb(255, 255, 255), 2px 2px 2px 1px rgb(196, 196, 196, 196);
+    box-shadow: 2px 2px 6px 2px rgb(255, 255, 255) inset, -2px -2px 6px 2px rgb(196, 196, 196) inset;
+}
+
+.button_default_dark_mode{
+    margin-left: 20%;
+    margin-right: 0%;
+    margin-top:5%;
+    margin-bottom: 5%;
+    padding:6%;
+    font-size:30px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 6px 2px #626775 inset, -2px -2px 6px 2px rgb(0, 0, 0) inset;
 }
 
 .button_clicked{
-    margin-left: 10%;
-    margin-right:10%;
+    margin-left: 20%;
+    margin-right: 0%;
     margin-top:5%;
     margin-bottom: 5%;
-    padding:5%;
+    padding:6%;
     font-size:30px;
     border-radius: 30px;
-    box-shadow: -5px -5px 14px 2px rgb(255, 255, 255) inset, 4px 4px 10px 2px rgb(196, 196, 196, 196) inset;
+    box-shadow: -2px -2px 6px 2px rgb(255, 255, 255) inset, 2px 2px 6px 2px rgb(196, 196, 196) inset;
 }
 
-#clock {
+.button_clicked_dark_mode{
+    margin-left: 20%;
+    margin-right: 0%;
+    margin-top:5%;
+    margin-bottom: 5%;
+    padding:6%;
+    font-size:30px;
+    border-radius: 30px;
+    box-shadow: -2px -2px 6px 2px #626775 inset, 2px 2px 6px 2px rgb(0, 0, 0) inset;
+}
+
+.clock{
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top:5%;
+    margin-bottom: 5%;
 }
 
 .calendar{
@@ -38,14 +64,20 @@
 }
 
 #alert_box {
-    background-color: #E4EBF5;
     margin-right:10%;
     padding-top:5%;
     padding-bottom: 5%;
     margin-top:5%;
     margin-bottom: 5%;
     border-radius: 30px;
-    box-shadow: -5px -5px 14px 2px rgb(255, 255, 255), 4px 4px 10px 2px rgb(196, 196, 196, 196);
+}
+
+.alert_box{
+    box-shadow: 2px 2px 6px 2px rgb(255, 255, 255) inset, -2px -2px 6px 2px rgb(196, 196, 196) inset;
+}
+
+.alert_box_dark_mode{
+    box-shadow: 2px 2px 6px 2px #626775 inset, -2px -2px 6px 2px rgb(0, 0, 0) inset;
 }
 
 input{display:none;}
@@ -75,3 +107,15 @@ input:checked + label::before{transform:translateX(65px);}
 
 label.round{border-radius : 34px}
 label.round::before{border-radius:50%}
+
+#lb-audio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+   }
+   
+   audio {
+     display: block;
+     margin: 20px auto;
+   }
