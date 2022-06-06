@@ -1,23 +1,24 @@
 body div {
   display : flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
-H1 {
-  text-align: center;
-  color: #000;
-  font-size: 30px;
-  border: 3px solid red;
+caption{
+  font-size: 100px;
+  margin-bottom: 10px;
+  color: blue;
+
 }
 
 
 .myTimetable {
-  width:100%;
+  width:84%;
   border-collapse: collapse;
   table-layout: auto;
   margin-top: 80px;
-  border-style: ridge;  
+  border-style: ridge; 
+  margin-left: 8%; 
+  margin-right: 8%;
 }
 
 .myTimetable THEAD{
@@ -35,7 +36,7 @@ H1 {
   text-align: center;
 }
 .myTimetable TBODY TR TD:first-child {
-  background-color: #FF0066;
+  background-color: green;
   font-weight: bold;
 }
 
