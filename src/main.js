@@ -44,15 +44,14 @@ function mouseUp(id) {
   }
 }
 
-const c = document.getElementById("clock");
-const dpr = window.devicePixelRatio;  
+const navigation = navigator.userAgent;
 
+const c = document.getElementById("clock");
+const dpr = window.devicePixelRatio;
 const ctx = c.getContext('2d');
-c.width =  c.width * dpr;
+c.width = c.width * dpr;
 c.height = c.height * dpr;
 ctx.scale(dpr, dpr);
-// const clockCenterX = c.width / 2;
-// const clockCenterY = c.height / 2;
 let radius = c.height / 4;
 ctx.translate(radius*2, radius);
 radius = radius * 0.90
