@@ -54,3 +54,8 @@ caption{
 	width: 10vw;
 	height: 5vh;
 }
+form {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
