@@ -1,52 +1,42 @@
 body div {
   display : flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
-H1 {
-  text-align: center;
-  color: #000;
-  font-size: 30px;
-  border: 3px solid red;
-}/*123*/
-
-
-
-caption {
-  font-size: 60px;
-  margin-bottom: 90px;
- 
+caption{
+  font-size: 100px;
+  margin-bottom: 10px;
   color: blue;
-  text-shadow: -3px 0px yellow, 0px 3px yellow, 3px 0px yellow, 0px -3px yellow;
+
 }
 
- .myTimetable {
-  width:100%;
+
+.myTimetable {
+  width:84%;
   border-collapse: collapse;
   table-layout: auto;
   margin-top: 80px;
-  border-style: ridge;  
+  border-style: ridge; 
+  margin-left: 8%; 
+  margin-right: 8%;
 }
-.myTimetable TD {
-  border: 1px solid black;
-  padding: 6px;
-  text-align: center;
-}
+
 .myTimetable THEAD{
   color: #646EFF;
   font-size: 30px;
-  margin-bottom:50000px;
 }
-
-/* 
 
 .myTimetable TBODY {
   background-color: #AAAAFF;
 }
 
+.myTimetable TD {
+  border: 1px solid black;
+  padding: 6px;
+  text-align: center;
+}
 .myTimetable TBODY TR TD:first-child {
-  background-color: #FF0066;
+  background-color: green;
   font-weight: bold;
 }
 
@@ -63,4 +53,4 @@ caption {
 .room {
   font-size: 10pt;
   font-style: italic;
-} */ 
+} 

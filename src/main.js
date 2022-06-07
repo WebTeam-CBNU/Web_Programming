@@ -1,6 +1,7 @@
 function darkMode() {
   document.body.classList.toggle("body_dark_mode");
   document.getElementById('box').classList.toggle("box_dark_mode");
+  document.getElementById('calendar').classList.toggle("calendar_dark_mode");
 
   const button_default_list = document.getElementsByClassName('button_default');
   const button_default_list_length = button_default_list.length;
@@ -19,6 +20,7 @@ function darkMode() {
   for(let i = 0; i < alert_box_list_length; i++)  {
       alert_box_list[i].classList.toggle("alert_box_dark_mode");
   }
+
 }
 
 function mouseDown(id) {
@@ -37,6 +39,7 @@ function mouseUp(id) {
   if(document.getElementById(id).classList.contains("button_clicked_dark_mode")){
       document.getElementById(id).classList.remove("button_clicked_dark_mode");
       document.getElementById(id).classList.add("button_default_dark_mode");
+      
   }
   else if(document.getElementById(id).classList.contains("button_clicked")){
       document.getElementById(id).classList.remove("button_clicked");
@@ -58,6 +61,15 @@ ctx.translate(radius*2.7, radius*1.35);
 radius = radius * 0.90
 setInterval(drawClock, 1000);
 
+
+// 그림자 코드
+
+// ctx.shadowColor = "#aaa";
+// ctx.shadowOffsetX = 3;
+// ctx.shadowOffsetY = 3;
+// ctx.shadowBlur = 7;
+
+
 function drawClock() {
   drawFace(ctx, radius);
   drawNumbers(ctx, radius);
@@ -70,10 +82,11 @@ function drawFace(ctx, radius) {
   ctx.arc(0, 0, radius, 0, 2*Math.PI);
   ctx.fillStyle = 'white';
   ctx.fill();
-  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad = ctx.createRadialGradient(0,0,radius*0.85, 0,0,radius*1.05);
   grad.addColorStop(0, '#333');
-  grad.addColorStop(0.5, 'white');
-  grad.addColorStop(1, '#333');
+  grad.addColorStop(0.5, '#999');
+  grad.addColorStop(0.75, '#eee');
+  grad.addColorStop(1, '#999');
   ctx.strokeStyle = grad;
   ctx.lineWidth = radius*0.1;
   ctx.stroke();
