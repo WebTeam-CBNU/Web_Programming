@@ -50,13 +50,13 @@ const navigation = navigator.userAgent;
 const c = document.getElementById("clock");
 const dpr = window.devicePixelRatio;
 const ctx = c.getContext('2d');
-c.width =  c.width * dpr*2;
-c.height = c.height * dpr*2;
+c.width =  c.width * dpr;
+c.height = c.height * dpr;
 ctx.scale(dpr, dpr);
 // const clockCenterX = c.width / 2;
 // const clockCenterY = c.height / 2;
-let radius = c.height / 3.5;
-ctx.translate(radius*2.7, radius);
+let radius = c.height / 4;
+ctx.translate(radius*2, radius);
 radius = radius * 0.90
 setInterval(drawClock, 1000);
 

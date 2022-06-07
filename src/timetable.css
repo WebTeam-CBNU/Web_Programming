@@ -10,47 +10,49 @@ caption{
 
 }
 
-
-.myTimetable {
-  width:84%;
-  border-collapse: collapse;
-  table-layout: auto;
-  margin-top: 80px;
-  border-style: ridge; 
-  margin-left: 8%; 
-  margin-right: 8%;
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.myTimetable THEAD{
-  color: #646EFF;
-  font-size: 30px;
+table {
+    color: black;
+	width: 65vw;
+	border-collapse: collapse;
+    border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-.myTimetable TBODY {
-  background-color: #AAAAFF;
+th, td {
+	padding: 1.2vh;
+	background-color: rgba(255,255,255,0.2);
 }
 
-.myTimetable TD {
-  border: 1px solid black;
-  padding: 6px;
-  text-align: center;
-}
-.myTimetable TBODY TR TD:first-child {
-  background-color: green;
-  font-weight: bold;
+thead th {
+	background-color:rgba(85, 96, 144, 0.3);
 }
 
-.break, .lunch {
-  background-color: #FF0066 !important;
-  font-style: italic;
+tbody td {
+		position: relative;
+}
+tbody td:hover::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.6);
+				z-index: -1;
 }
 
-.subject {
-  font-size: 12pt;
-  margin-bottom:4px;
+tbody tr:hover {
+  background-color: rgba(255,255,255,0.6);
 }
 
-.room {
-  font-size: 10pt;
-  font-style: italic;
-} 
+tbody td {
+  position: relative;
+}
