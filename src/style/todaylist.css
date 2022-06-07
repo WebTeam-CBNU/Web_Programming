@@ -1,0 +1,15 @@
+
+.my-div {
+  display: inline-block;
+  padding: 20px 40px;
+  width: 100px;
+  height: 50px;
+  border: 1px solid rgb(139, 135, 144);
+  line-height: 24px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  background-color: #fff;
+  color: rgb(139, 135, 144);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 30px, rgba(0, 0, 0, 0.198) 0px 6px 6px;
+}
