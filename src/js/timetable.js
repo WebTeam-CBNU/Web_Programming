@@ -33,5 +33,5 @@ selectEl.addEventListener('change', function onSelect(e) {
   confirmBtn.value = selectEl.value;
 });
 // "Confirm" button of form triggers "close" on dialog because of [method="dialog"]
-favDialog.addEventListener('close', function onClose() {
-});
+// favDialog.addEventListener('close', function onClose() {
+// });

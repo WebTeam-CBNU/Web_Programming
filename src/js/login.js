@@ -1,5 +1,6 @@
 const favDialog = document.getElementById('favDialog');
 const loginBtn = document.getElementById('loginbutton')
+const closeBtn = document.getElementsByClassName('closeModal')[0]
 
 if ( typeof favDialog.showModal !== 'function' ) {
     favDialog.hidden = true;
@@ -13,6 +14,9 @@ if ( typeof favDialog.showModal !== 'function' ) {
     if (typeof favDialog.showModal === "function") {
       favDialog.showModal();
       // Cancel button
+      document.querySelectorAll(".user-box input").forEach((elememt)=>{
+          elememt.defaultValue = "test"
+      })
       // Confirm button
     } else {
 
@@ -20,5 +24,12 @@ if ( typeof favDialog.showModal !== 'function' ) {
     console.log("fuck")
   })
 
-  favDialog.addEventListener('close', function onClose() {
-});
+  closeBtn.addEventListener('click', ()=> {
+    favDialog.close();
+    // closeBtn.focus();
+    // document.getElementsByTagName("body")[0].style.overflow = "auto";
+  });
+
+  favDialog.addEventListener('close', ()=>{
+    
+  })

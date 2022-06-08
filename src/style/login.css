@@ -57,7 +57,7 @@
    font-size: 12px;
  }
  
- .login-box a {
+ .login-box button {
    /* position: relative; */
    display: block;
    padding: 10px 20px;
@@ -66,30 +66,15 @@
    text-transform: uppercase;
    overflow: hidden;
    transition: .5s;
-   border-radius: 15px;
+   border: none;
+   background-color: rgba(123, 123, 123,0.0);
    color: #03e9f4;
-   border-color: #03e9f4;
+   
    margin-top: 40px;
    letter-spacing: 4px
  }
 
- .login-box a:visited {
-  /* position: relative; */
-  display: block;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: .5s;
-  border-radius: 15px;
-  color: #03e9f4;
-  border-color: #03e9f4;
-  margin-top: 40px;
-  letter-spacing: 4px
-}
-
- .login-box a:hover {
+ .login-box button:hover {
     background: #03e9f4;
     color: #fff;
     border-radius: 5px;
