@@ -25,8 +25,8 @@ button{
 	display: flex;
 	flex-direction: row;
 	position: absolute;
-	top: 10%;
-	left: 50%;
+	top: 12vh;
+	left: 51vw;
 	transform: translate(-40%, -50%);
 	background: linear-gradient(45deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.5)) ;
 	border-radius: 15px 15px 0px 0px;
@@ -45,9 +45,8 @@ button{
 	display: flex;
 	flex-direction: row;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: 15vh;
+	left: 15vw;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
 	font-family: 'Kdam Thmor Pro', sans-serif;
