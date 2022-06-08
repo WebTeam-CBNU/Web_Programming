@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/calendar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>정현이가 만드는 메인페이지</title>
 </head>
 <body>
     <div id="box" class="box">
         <div class="innerbox" style="width : 26%;">
-            <div id="button1" class="button_default" onmousedown="mouseDown(this.id)" onmouseup="mouseUp(this.id)" onClick="location.href='timetable.html'">시간표</div>
+            <div id="button1" class="button_default" onmousedown="mouseDown(this.id)" onmouseup="mouseUp(this.id)" onClick="location.href='timetableproto.html'">시간표</div>
             <div id="button2" class="button_default" onmousedown="mouseDown(this.id)" onmouseup="mouseUp(this.id)">과제 목록</div>
             <div id="button3" class="button_default" onmousedown="mouseDown(this.id)" onmouseup="mouseUp(this.id)" onClick="location.href='todaylist.html'">오늘 할 일</div>
             <div id="button4" class="button_default" onmousedown="mouseDown(this.id)" onmouseup="mouseUp(this.id)">친구 관리</div>
@@ -78,12 +78,12 @@
             </div>
             <div id="lb-audio">
                 <audio controls>
-                  <source src="기억을 걷는 시간.mp3" type="audio/mpeg">  
+                  <source src="./music/기억을 걷는 시간.mp3" type="audio/mpeg">  
                 </audio>
             </div>
         </div>
     </div>
-    <script src="main.js"></script>
-    <script src="calendar.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/calendar.js"></script>
 </body>
 </html>
