@@ -74,11 +74,21 @@ form {
 	flex-direction: column;
 	text-align: left;
 }
-#favDialog{
+#favDialog:hover{
 	border-radius: 15px 15px 15px 15px;
 	border-color: #BBB;
 	font-family: 'Kdam Thmor Pro', sans-serif;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transform: translateY(-10px);
 
+}
+#container:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transform: translateY(-10px);
+}
+.schedule:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transform: translateY(-10px);
 }
 dialog form #box_button 
 {
