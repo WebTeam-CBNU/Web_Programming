@@ -80,7 +80,7 @@ form {
 	font-family: 'Kdam Thmor Pro', sans-serif;
 
 }
-#box_button
+dialog form #box_button 
 {
 	font-weight: 200;
 	border-radius: 12px;

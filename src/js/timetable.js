@@ -18,6 +18,10 @@ updateButton.forEach((items) => {
     items.addEventListener('click', function onOpen() {
         if (typeof favDialog.showModal === "function") {
           favDialog.showModal();
+          // Cancel button
+          document.querySelectorAll('#box_button button')[0].style.color = "#999999"
+          // Confirm button
+          document.querySelectorAll('#box_button button')[0].style.color = "#666666"
         } else {
     
         }
