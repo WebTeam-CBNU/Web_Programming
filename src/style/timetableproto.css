@@ -60,14 +60,15 @@ button{
 .time div {
 	padding: 1vw;
 	width: 10vw;
-	height: 5vh;
+	height: 4vh;
 }
 
 .schedule div {
 	padding: 1vw;
 	width: 10vw;
-	height: 5vh;
+	height: 4vh;
 }
+
 form {
 	display: flex;
 	flex-direction: column;
