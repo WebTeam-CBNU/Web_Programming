@@ -14,7 +14,7 @@
     <div id="box" class="box">
         <div class="first-innerbox" style="width: 26%;">
             <div class="innerbox">
-                <button id="loginbutton">로그인</button>
+                <div id="loginbutton" class="loginbutton_default" onmousedown="mouseDown(this.id)" onmouseup="mouseUp(this.id)" onclick="modalOn()" >로그인</div>
                 </div>
         <div class="innerbox" style="height: 90%;">
             <div id="button1" class="button_default" onmousedown="mouseDown(this.id)" onmouseup="mouseUp(this.id)" onClick="location.href='timetableproto.html'">시간표</div>
@@ -63,6 +63,26 @@
                 
             </div>
         </div>
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+              <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Username</label>
+              </div>
+              <div class="user-box">
+                <input type="password" name="" required="">
+                <label>Password</label>
+              </div>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+              </a>
+            </form>
+          </div>
         <div class="innerbox" style="width : 26%;">
             <div id="alert_box" class="alert_box">
                 <p>dd</p>
