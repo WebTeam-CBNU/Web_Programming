@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style/common.css">
-    <link rel="stylesheet" href="../style/timetableproto.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style/timetableproto.css">
     <title>재민이가 만드는 일정 페이지입니다</title>
 </head>
 <body>
   <div id="box" class="box">
+    <div id="contain">
     <div class="title">
-      <div>월요일</div>
-      <div>화요일</div>
-      <div>수요일</div>
-      <div>목요일</div>
-      <div>금요일</div>
+      <div>MON</div>
+      <div>THU</div>
+      <div>WED</div>
+      <div>THU</div>
+      <div>FRI</div>
     </div>
     <div class="container">
       <div class="time">
@@ -87,6 +95,7 @@
       </div>
     </div>      
 </div>
+</div>
 <dialog id="favDialog">
   <form method="dialog">
       <label>어느 요일이냐?
@@ -120,7 +129,7 @@
       <label>강의실은?
         <input type="text">
       </label>
-    <div>
+    <div id="box_button">
       <button value="cancel">Cancel</button>
       <button id="confirmBtn" value="default">Confirm</button>
     </div>
