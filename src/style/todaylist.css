@@ -17,11 +17,11 @@
 
 #dailyTable {
   position: absolute;
-	top: 50%;
-	left: 71%;
+	top: 45%;
+	left: 72%;
 	transform: translate(-50%, -50%);
   width : 30vw;
-  height: 40vh;
+  height: 50vh;
 }
 
 .Wtitle {
@@ -58,3 +58,19 @@
 .sunday, .Tuesday, .Thursday, .Saturday {
   border-left: 1px solid black;
 }
+
+.Dtitle {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10%;
+  font-size: larger;
+}
+
+.DBody {
+  display: grid;
+  grid-template-rows: 100px, 100px;
+  grid-template-columns: ;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
