@@ -32,6 +32,14 @@ function mouseDown(id) {
       document.getElementById(id).classList.remove("button_default");
       document.getElementById(id).classList.add("button_clicked");
   }
+  else if(document.getElementById(id).classList.contains("loginbutton_default_dark_mode")){
+    document.getElementById(id).classList.remove("loginbutton_default_dark_mode");
+    document.getElementById(id).classList.add("loginbutton_clicked_dark_mode");
+}
+  else if(document.getElementById(id).classList.contains("loginbutton_default")){
+    document.getElementById(id).classList.remove("loginbutton_default");
+    document.getElementById(id).classList.add("loginbutton_clicked");
+}
 }
 
 
@@ -45,7 +53,17 @@ function mouseUp(id) {
       document.getElementById(id).classList.remove("button_clicked");
       document.getElementById(id).classList.add("button_default");
   }
+  else if(document.getElementById(id).classList.contains("loginbutton_clicked_dark_mode")){
+    document.getElementById(id).classList.remove("loginbutton_clicked_dark_mode");
+    document.getElementById(id).classList.add("loginbutton_default_dark_mode");
+    
 }
+else if(document.getElementById(id).classList.contains("loginbutton_clicked")){
+    document.getElementById(id).classList.remove("loginbutton_clicked");
+    document.getElementById(id).classList.add("loginbutton_default");
+}
+}
+
 
 const navigation = navigator.userAgent;
 
@@ -145,4 +163,7 @@ function drawHand(ctx, pos, length, width) {
     ctx.rotate(-pos);
 }
 
-
+const modal = document.getElementsByClassName("login-box")[0]
+function modalOn() {
+  modal.style.display = "flex"
+}
