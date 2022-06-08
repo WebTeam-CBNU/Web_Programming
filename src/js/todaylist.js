@@ -1,5 +1,6 @@
 let plsBtn = document.getElementsByClassName("plsBtn")[0];
 let checklist = document.getElementsByClassName("checklist")[0];
+const testtt = document.getElementsByClassName("left")
 
 function addCheck() {
     checklist.innerHTML = "fuck!"
