@@ -1,52 +1,37 @@
 <!DOCTYPE html>
 <!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo App JavaScript | CodingNepal</title>
-    <link rel="stylesheet" href="../style/todaylist.css">
-    <link rel="stylesheet" href="../style/common.css">
-    
-</head>
-<body onload="makeTable()">
-    <div id="box" class="box">
-        <div style="width : 36%;">
-        <div style="font-size:30px;">Todaylist</div>
-        <script>
-            //addeventlistener
-            let t = document.getElementById("nav_title");
-            t.addEventListener('mouseenter', function (event) {
-                t.style.fontWeight = "bold";
-            });
-    
-            t.addEventListener('mouseleave', function (event) {
-                t.style.fontWeight = "normal";
-            })
-        </script>    
-    
-        <div class="seats">
-            <div class="seat-table"></div>
-           
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WTF</title>
+        <link rel="stylesheet" href="../style/todaylist.css">
+        <link rel="stylesheet" href="../style/common.css">
+        
+    </head>
+    <body>
+        <div id="box" class="box">
+            <div id="twoTableContainer">
+                <div id="weeklyTable">
+                    <div class="Wtitle">
+                        <div>Weekly</div>
+                        <div>2022.06</div>
+                    </div>
+                    <div class="WBody">
+                        <div class="sunday">Sun</div>
+                        <div class="monday">Mon</div>
+                        <div class="Tuesday">Tue</div>
+                        <div class="Wednesday">Wed</div>
+                        <div class="Thursday">Thur</div>
+                        <div class="Friday">Fri</div>
+                        <div class="Saturday">Sat</div>
+                    </div>
+                </div>
+                <div id="dailyTable">
+                    <div class="Dtitle">Daily</div>
+                </div>
+            </div>
         </div>
-        <div style="width : 36%;">
-        </div>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-    </div>
-  <script src="../js/todaylist.js"></script>
-</body>
+    <script src="../js/todaylist.js"></script>
+    </body>
 </html>
