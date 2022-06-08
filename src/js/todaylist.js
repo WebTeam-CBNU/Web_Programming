@@ -9,7 +9,7 @@ function makeTable() {
   var computer_id = 1;
   td_html = "<input type='checkbox' name='radios[]'  class='radios' id='radio" + computer_id + "'>";
 
-  const weekly_date = ['SUN', 'MON', 'TUE', 'WED', 'THUR', 'FRI', 'SAT','ºñ°í']
+  const weekly_date = ['SUN', 'MON', 'TUE', 'WED', 'THUR', 'FRI', 'SAT','nothing']
 
 
   for (var i = 0; i < 3; i++) {

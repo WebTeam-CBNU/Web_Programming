@@ -14,8 +14,11 @@ label{
 	margin:5px;
 }
 
+
 button{
 	margin:5px;
+	font-size: 100;
+
 }
 
 .title {
@@ -76,4 +79,10 @@ form {
 	border-color: #BBB;
 	font-family: 'Kdam Thmor Pro', sans-serif;
 
+}
+#box_button
+{
+	font-weight: 200;
+	border-radius: 12px;
+	color:aquamarine;
 }
