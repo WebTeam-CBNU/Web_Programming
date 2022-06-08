@@ -7,7 +7,7 @@ function createHomework() {
     const subjectArray = ["subject1, subject2"];
 
     // test 줄입니다
-    let testElement = Array.from(document.querySelectorAll(`homework`))
+    let testElement = document.querySelectorAll(`#subject1 .homework`)
     let fuck = document.getElementsByClassName("add-homework")[0]
     fuck.innerHTML = testElement.length
 
