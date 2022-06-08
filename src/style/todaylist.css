@@ -44,7 +44,7 @@
   border-top: 1px solid black;
 }
 
-.sunday{
+.Sunday{
   color: red;
 }
 
@@ -56,7 +56,7 @@
   border-bottom: 1px solid black;;
 }
 
-.sunday, .Tuesday, .Thursday, .Saturday {
+.Sunday, .Tuesday, .Thursday, .Saturday {
   border-left: 1px solid black;
 }
 
@@ -94,12 +94,15 @@
 .leftBox, .timeTable, .rightBox {
   padding-top: 1vh;
   padding-bottom: 1vh;
-  height: 47vh;
+  height: 46vh;
 }
 
 .timeTable {
   border-right : 1px solid black;
   border-left: 1px solid black;
+}
+.timeBox{
+  margin-bottom: 50%;
 }
 
 .checkbox, .plsBtn {
@@ -131,6 +134,11 @@
   grid-column: 1 / 18;
 }
 
+#amBox div{
+  display: flex;
+}
 
-
-
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}

@@ -35,11 +35,11 @@ function mouseDown(id) {
   else if(document.getElementById(id).classList.contains("loginbutton_default_dark_mode")){
     document.getElementById(id).classList.remove("loginbutton_default_dark_mode");
     document.getElementById(id).classList.add("loginbutton_clicked_dark_mode");
-}
+  }
   else if(document.getElementById(id).classList.contains("loginbutton_default")){
     document.getElementById(id).classList.remove("loginbutton_default");
     document.getElementById(id).classList.add("loginbutton_clicked");
-}
+  }
 }
 
 
@@ -162,33 +162,3 @@ function drawHand(ctx, pos, length, width) {
     ctx.stroke();
     ctx.rotate(-pos);
 }
-
-const modal = document.getElementsByClassName("login-box")[0]
-function modalOn() {
-  modal.style.display = "flex"
-}
-function isModalOn() {
-  return modal.style.display === "flex"
-}
-function modalOff() {
-  modal.style.display = "none"
-}
-const btnModal = document.getElementById("loginbutton")
-btnModal.addEventListener("click", e => {
-  modalOn()
-})
-const closeBtn = modal.querySelector(".close-area")
-closeBtn.addEventListener("click", e => {
-  modalOff()
-})
-modal.addEventListener("click", e => {
-  const evTarget = e.target
-  if(evTarget.classList.contains("modal-overlay")) {
-      modalOff()
-  }
-})
-window.addEventListener("keyup", e => {
-  if(isModalOn() && e.key === "Escape") {
-      modalOff()
-  }
-})
