@@ -163,7 +163,7 @@ function drawHand(ctx, pos, length, width) {
     ctx.rotate(-pos);
 }
 
-const modal = document.getElementsByClassName("login-box")
+const modal = document.getElementsByClassName("login-box")[0]
 function modalOn() {
   modal.style.display = "flex"
 }
