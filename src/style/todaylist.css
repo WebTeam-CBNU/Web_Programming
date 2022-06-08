@@ -1,5 +1,5 @@
 #box {
-  background: linear-gradient(90deg, rgba(228,235,245,1) 0%, rgba(228,235,245,1) 49%, rgba(165,162,173,0.1) 50%, rgba(228,235,245,1) 51%, rgba(228,235,245,1) 100%);
+  background: linear-gradient(90deg, rgba(228,235,245,1) 0%, rgba(228,235,245,1) 49%, rgba(165,162,173,0.6) 50%, rgba(228,235,245,1) 51%, rgba(228,235,245,1) 100%);
 }
 
 #twoTableContainer {
