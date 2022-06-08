@@ -157,7 +157,7 @@
 }
 
 input{display:none;}
-label{
+label.round{
     display:inline-block;
     width:100px;
     height:34px;
@@ -166,7 +166,7 @@ label{
     background-color:#ccc;
 }
 
-label::before{
+label.round::before{
     content: '';
     display:block;
     width:26px;
@@ -178,8 +178,8 @@ label::before{
     transition:all .4s ease;
 }
 
-input:checked + label {background-color:#2196F3;}
-input:checked + label::before{transform:translateX(65px);}
+input:checked + label.round {background-color:#2196F3;}
+input:checked + label.round::before{transform:translateX(65px);}
 
 label.round{border-radius : 34px}
 label.round::before{border-radius:50%}
@@ -197,6 +197,10 @@ label.round::before{border-radius:50%}
    }
    html {
     height: 100%;
+<<<<<<< HEAD
   }
 
 
+=======
+  }
+>>>>>>> ca8dc114d852830d1b1978b5fb94b621b140e693
