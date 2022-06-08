@@ -1,0 +1,29 @@
+.rowscroll{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin:5%;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.rowscroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+.list-item {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 89%;
+    border-radius: 30px;
+    border:1px solid;
+    margin-left: 10px;
+    padding:2%;
+    display: inline-block;
+  }
+
+  .subject-title{
+
+      height: 50px;
+      width:130px;
+  }
