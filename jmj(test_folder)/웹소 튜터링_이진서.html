@@ -10,9 +10,7 @@
     <title>Document</title>
 
     <style>
-        nav {
-            background-color: rgb(139, 135, 144);
-        }
+    
 
         nav ul {
             margin: 0;
@@ -52,6 +50,7 @@
         .radios+label{
             display: inline-block;
             padding: 20px 40px;
+            width: 100px;
             border: 1px solid rgb(139, 135, 144);
             line-height: 24px;
             text-align: center;
@@ -90,19 +89,22 @@
             var computer_id = 1;
             td_html = "<input type='checkbox' name='radios[]'  class='radios' id='radio" + computer_id + "'>";
 
+            const weekly_date = ['SUN', 'MON', 'TUE', 'WED', 'THUR', 'FRI', 'SAT','비고']
+
+
             for (var i = 0; i < 3; i++) {
                 var table = document.createElement("table");
                 document.getElementsByClassName("seat-table")[i].appendChild(table);
-                for (var j = 0; j < 5; j++) {
+                for (var j = 0; j < 4; j++) {
                     var tr = document.createElement("tr");
                     table.appendChild(tr);
 
                     var td1 = document.createElement("td");
-                    td1.innerHTML = "<input type='checkbox' name='radios[]' value='123' class='radios' id='radio" + computer_id + "'><label for='radio" + computer_id + "'> " + "월요일</label>"; //td_html
+                    td1.innerHTML = "<input type='checkbox' name='radios[]' value='123' class='radios' id='radio" + computer_id + "'><label for='radio" + computer_id + "'> " + `${weekly_date[j]}</label>`; //td_html
                     computer_id += 1;
 
                     var td2 = document.createElement("td");
-                    td2.innerHTML = "<input type='checkbox' name='radios[]' value='123' class='radios' id='radio" + computer_id + "'><label for='radio" + computer_id + "'> " + computer_id + "번 좌석</label>"; //td_html
+                    td2.innerHTML = "<input type='checkbox' name='radios[]' value='123' class='radios' id='radio" + computer_id + "'><label for='radio" + computer_id + "'> " + `${weekly_date[j+4]}</label>`; //td_html
                     computer_id += 1;
 
                     tr.appendChild(td1);
@@ -134,11 +136,7 @@
 </head>
 
 <body onload="makeTable()">
-    <nav>
-        <ul>
-            <li><span id="nav_title">오픈소스웹소프트웨어 11주차</span></li>
-        </ul>
-    </nav>
+   
     <script>
         //addeventlistener
         let t = document.getElementById("nav_title");
