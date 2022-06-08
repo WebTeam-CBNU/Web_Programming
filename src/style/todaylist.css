@@ -1,5 +1,5 @@
 #box {
-  background: linear-gradient(90deg, rgba(228,235,245,1) 0%, rgba(228,235,245,1) 49%, rgba(165,162,173,0.6) 50%, rgba(228,235,245,1) 51%, rgba(228,235,245,1) 100%);
+  background: linear-gradient(90deg, rgba(228,235,245,1) 0%, rgba(228,235,245,1) 49%, rgba(165,162,173,0.2) 50%, rgba(228,235,245,1) 51%, rgba(228,235,245,1) 100%);
 }
 
 #twoTableContainer {
@@ -120,8 +120,9 @@
 
 .plsBtn button {
   background-color: aliceblue;
-  border: 1px solid black;
+  border: none;
   border-radius: 20%;
+  box-shadow: 1px 1px 1px 1px rgb(196, 196, 196);
 }
 
 .checklist {
