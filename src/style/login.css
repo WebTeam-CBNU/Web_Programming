@@ -1,18 +1,19 @@
 #favDialog {
     background: rgb(206, 211, 219);
     border: none;
-    height: 38vh;
-    width: 29vw;
+    height: 45vh;
+    width: 28vw;
 }
 
  .login-box {
    width: 400px;
    padding: 40px;
    /* transform: translate(050%, -50%); */
-   background: rgba(0,0,0,.6);
+   background: rgba(123, 123, 123,.6);
    box-sizing: border-box;
    box-shadow: 0 15px 25px rgba(0,0,0,.6);
    border-radius: 10px;
+   font-family: sans-serif;
  }
  
  .login-box h2 {
@@ -56,7 +57,7 @@
    font-size: 12px;
  }
  
- .login-box form a {
+ .login-box a {
    /* position: relative; */
    display: block;
    padding: 10px 20px;
@@ -66,25 +67,48 @@
    overflow: hidden;
    transition: .5s;
    border-radius: 15px;
+   color: #03e9f4;
    border-color: #03e9f4;
    margin-top: 40px;
    letter-spacing: 4px
  }
+
+ .login-box a:visited {
+  /* position: relative; */
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  border-radius: 15px;
+  color: #03e9f4;
+  border-color: #03e9f4;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
  .login-box a:hover {
     background-color: #03e9f4;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
+    box-shadow: 0 0 2px #03e9f4,
+                0 0 4px #03e9f4,
+                0 0 8px #03e9f4,
+                0 0 16px #03e9f4;
   }
   /* .login-box a span {
     position: absolute;
     display: block;
   }
 
- .login-box a span:nth-child(1) {
+  .btnList {
+    display: flex;
+    justify-content: space-around;
+  }
+
+ /* .login-box a span:nth-child(1) {
     top: 0;
     left: -10%;
     width: 10%;
@@ -157,6 +181,12 @@
     50%,100% {
       bottom: 100%;
     }
+<<<<<<< HEAD
   } */
  
  
+=======
+  }
+  */
+ 
+>>>>>>> 3c5c3f0525d4825b1e4a910857901014383d0109
