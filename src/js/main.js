@@ -2,6 +2,7 @@ function darkMode() {
   document.body.classList.toggle("body_dark_mode");
   document.getElementById('box').classList.toggle("box_dark_mode");
   document.getElementById('calendar').classList.toggle("calendar_dark_mode");
+  document.getElementById('loginbutton').classList.toggle("loginbutton_default_dark_mode");
 
   const button_default_list = document.getElementsByClassName('button_default');
   const button_default_list_length = button_default_list.length;

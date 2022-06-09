@@ -31,6 +31,8 @@ function createHomework(subjectId) {
     newSubject.setAttribute("class", "subject-block");
     newSubject.innerHTML = `
     <div class="subject-title">과목 이름</div>
+    <div id='${subjectNum}'>
+    </div>
     <div class="add-homework" onclick="createHomework('${subjectNum}')">+</div>`;          
     document.getElementById("subject-list").appendChild(newSubject);
 
