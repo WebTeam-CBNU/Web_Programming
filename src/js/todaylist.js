@@ -98,13 +98,13 @@ function Tuesday_onmouseout(){
     day[0].innerText="Tue";
     }
 
-function Wenesday_onmouseover(){
-    const day=document.getElementsByClassName("Wenesday");
+function Wednesday_onmouseover(){
+    const day=document.getElementsByClassName("Wednesday");
     day[0].innerText="수요일 입니다";
 }
 
-function Wenesday_onmouseout(){
-    const day=document.getElementsByClassName("Wenesday");
+function Wednesday_onmouseout(){
+    const day=document.getElementsByClassName("Wednesday");
     day[0].innerText="Wed";
 }
 
