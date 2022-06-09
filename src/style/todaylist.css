@@ -99,15 +99,17 @@
   padding-top: 1vh;
   padding-bottom: 1vh;
   height: 46vh;
+  line-height: 95%;
 }
 
 .leftBox, .rightBox{
-  margin-left: 3%;
+  padding-left: 3%;
 }
 
 .timeTable {
   border-right : 1px solid black;
   border-left: 1px solid black;
+  
 }
 .timeBox{
   margin-bottom: 50%;
