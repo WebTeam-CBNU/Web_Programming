@@ -19,8 +19,8 @@ function createHomework(subjectId) {
 
   function createSubject() {
 
-    const deletedSubject = document.getElementById('subject-plus');
-    deletedSubject.remove();
+    const deletedPlusSubject = document.getElementById('subject-plus');
+    deletedPlusSubject.remove();
 
 
     const newSubject = document.createElement('div'); 
@@ -31,15 +31,13 @@ function createHomework(subjectId) {
     newSubject.setAttribute("class", "subject-block");
     newSubject.innerHTML = `
     <div class="subject-title">과목 이름</div>
-    <div id='${subjectNum}'>
-    </div>
     <div class="add-homework" onclick="createHomework('${subjectNum}')">+</div>`;          
     document.getElementById("subject-list").appendChild(newSubject);
 
 
-    const createBlock = document.createElement('div'); 
-    createBlock.setAttribute("id", "subject-plus");
-    createBlock.setAttribute("class", "subject-block");
-    createBlock.innerHTML = `<div class='subject-plus' onclick='createSubject()'>+</div>`;          
-    document.getElementById("subject-list").appendChild(createBlock);
+    const createPlusBlock = document.createElement('div'); 
+    createPlusBlock.setAttribute("id", "subject-plus");
+    createPlusBlock.setAttribute("class", "subject-block");
+    createPlusBlock.innerHTML = `<div class='subject-plus' onclick='createSubject()'>+</div>`;          
+    document.getElementById("subject-list").appendChild(createPlusBlock);
   } 

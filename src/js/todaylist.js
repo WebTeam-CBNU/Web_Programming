@@ -15,25 +15,38 @@ const tempArray = ["1", "2", "&nbsp", "4", "5", "&nbsp", "&nbsp", "test5", "test
 
 function showSchedule()
 {
-    const pmBox = document.getElementsByClassName('pmBox');
 
-    const removedamBox=document.getElementById('amBox');
-    removedamBox.remove();
+    const removedAmBox=document.getElementById('amBox');
+    removedAmBox.remove();
     const leftBox = document.getElementsByClassName('leftBox');
     const amBox = document.createElement('div'); 
     amBox.setAttribute("id" , "amBox");
     leftBox[0].appendChild(amBox)
 
     for(i=0;i<12;i++){
-    const newTodo = document.createElement('div'); 
-    
-    newTodo.innerHTML = 
-          `<input type='checkbox' name='dd' value='dd' style='margin:6px;'/><p>`+i+`~</p><br><br>     `;
-
-    document.getElementById(`amBox`).appendChild(newTodo);
+    const ToDoByAmTime = document.createElement('div'); 
+    ToDoByAmTime.innerHTML = 
+          `<input type='checkbox' name='amBox' value='am`+i+`' style='margin:6px;'/><p>&nbsp오전할일`+i+`~</p><br><br>     `;
+    document.getElementById(`amBox`).appendChild(ToDoByAmTime);
     }
 
 
+    const removedPmBox=document.getElementById('pmBox');
+    removedPmBox.remove();
+    const rightBox = document.getElementsByClassName('rightBox');
+    const pmBox = document.createElement('div'); 
+    pmBox.setAttribute("id" , "pmBox");
+    rightBox[0].appendChild(pmBox)
+
+    for(i=0;i<12;i++){
+    const ToDoByPmTime = document.createElement('div'); 
+    ToDoByPmTime.innerHTML = 
+          `<input type='checkbox' name='pmBox' value='pm`+i+`' style='margin:6px;'/><p>&nbsp오후할일`+i+`~</p><br><br>     `;
+    document.getElementById(`pmBox`).appendChild(ToDoByPmTime);
+    }
+
+
+    /*
     const allBox = Array.from(amBox).concat(Array.from(pmBox));
     Array.from(allBox).forEach((element) => {
         if(true){
@@ -50,4 +63,5 @@ function showSchedule()
             con.style.visibility = 'hidden';
         }
     });
+    */
 }

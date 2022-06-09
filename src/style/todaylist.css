@@ -97,6 +97,10 @@
   height: 46vh;
 }
 
+.leftBox, .rightBox{
+  margin-left: 3%;
+}
+
 .timeTable {
   border-right : 1px solid black;
   border-left: 1px solid black;
@@ -135,6 +139,10 @@
 }
 
 #amBox div{
+  display: flex;
+}
+
+#pmBox div{
   display: flex;
 }
 
